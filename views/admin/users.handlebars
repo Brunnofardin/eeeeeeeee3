@@ -1,0 +1,29 @@
+<h1>Usuários</h1>
+
+{{#each aqv}}
+    <div class="card mt-2">
+        <div class="card-body">
+            <p>
+                Email:
+                 <input type="button" value="{{Email}}" class="form-control mt-2">
+                    
+            </p>
+            <p>
+                Telefone
+                <input type="button" value="{{Telefone}}" class="form-control mt-2">
+            </p>
+        
+            <p>
+                <a href="/admin/usuario/edit/{{_id}}" class="btn btn-danger">Editar Usuário</a>
+                <a href="/admin/usuario/deletar/{{_id}}" class="btn btn-danger">Deletar Usuário</a>
+            </p>
+            
+        </div>
+    </div>
+
+{{else}}
+    <div class="alert alert-danger">Não há Usuários Cadastrados no Momento!</div>
+    <a href="/admin/cadastro" class="btn btn-success">Cadastrar Novo</a>
+{{/each}}
+
+ <a href="/admin/" class="btn btn-success mt-2">Voltar</a>

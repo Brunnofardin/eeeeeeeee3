@@ -1,0 +1,24 @@
+<h1>Cadastro de Usuário</h1>
+<div class="card">
+    <div class="card-body">
+        <form action="/admin/cadastro/novo" method="post" autocomplete="on">
+            <p>
+                Nome:
+                <input type="text" name="nome" id="" class="form-control" required>
+            </p>
+            <p>
+                Email:
+                <input type="email" name="email" id="" class="form-control" required>
+            </p>
+            <p>
+                Telefone:
+                <input type="tel" name="telefone" id="" class="form-control" required minlength="11">
+            </p>
+            <p>
+                <input type="submit" value="Cadastrar" class="btn btn-success">
+                <input type="reset" value="Limpar" class="btn btn-danger">
+                <a href="/admin/" class="btn btn-success">Voltar</a>
+            </p>
+        </form>
+    </div>
+</div>

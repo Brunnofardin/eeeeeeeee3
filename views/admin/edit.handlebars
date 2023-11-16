@@ -1,0 +1,27 @@
+<h1>Editando Usuário</h1>
+
+{{#if aqv}}
+    <div class="card">
+        <div class="card-body">
+            <form action="/admin/usuario/edit/save" method="post" autocomplete="on">
+                <p>
+                    Nome:
+                    <input type="text" name="nome" id="" class="form-control" value="{{aqv.Nome}}">
+                </p>
+                <p>
+                    Email:
+                    <input type="email" name="email" id="" class="form-control" value="{{aqv.Email}}">
+                </p>
+                <p>
+                    Telefone:
+                    <input type="tel" name="telefone" id="" class="form-control" value="{{aqv.Telefone}}">
+                </p>
+                <p>
+                    <input type="submit" value="Salvar" class="btn btn-success">
+                    <input type="reset" value="Limpar Formulário" class="btn btn-danger">
+                    <a href="/admin/" class="bnt btn-success">Voltar</a>
+                </p>
+            </form>
+        </div>
+    </div>
+{{/if}}
